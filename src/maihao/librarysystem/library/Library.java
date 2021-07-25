@@ -1,13 +1,24 @@
 package maihao.librarysystem.library;
 
+import maihao.librarysystem.Config;
 import maihao.librarysystem.book.Book;
+import maihao.librarysystem.book.BookComic;
+import maihao.librarysystem.book.BookNovel;
+import maihao.librarysystem.book.BookProgramming;
 import maihao.librarysystem.bookshelf.BookShelfLibrary;
 
 public class Library {
+
     public static BookShelfLibrary baseBookShelfLibrary = new BookShelfLibrary().setTagOfBookShelf(0);
     public static BookShelfLibrary bookShelfLibrary01 = new BookShelfLibrary().setTagOfBookShelf(1);
     public static BookShelfLibrary bookShelfLibrary02 = new BookShelfLibrary().setTagOfBookShelf(2);
     public static BookShelfLibrary bookShelfLibrary03 = new BookShelfLibrary().setTagOfBookShelf(3);
+
+
+
+    public static int getTotalBookNumInLibrary() {
+        return baseBookShelfLibrary.getTotalNum() + bookShelfLibrary01.getTotalNum() + bookShelfLibrary03.getTotalNum();
+    }
 
     public static void scanAllBookOnAllShelf() {
         System.out.println("一号书架:");

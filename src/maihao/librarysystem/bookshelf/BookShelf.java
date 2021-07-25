@@ -14,10 +14,10 @@ public class BookShelf {
     private ArrayList<Book> bookArrayList = new ArrayList<Book>();//书架是用来放书的
 
     public BookShelf() {
-        BookComic testBook = new BookComic("进击的巨人", "谏山创", 200);
-        BookNovel testBook2 = new BookNovel("进击巨人", "谏创", 200);
-        bookArrayList.add(testBook);
-        bookArrayList.add(testBook2);
+//        BookComic testBook = new BookComic("进击的巨人", "谏山创", 200);
+//        BookNovel testBook2 = new BookNovel("进击巨人", "谏创", 200);
+//        bookArrayList.add(testBook);
+//        bookArrayList.add(testBook2);
         this.totalNum = bookArrayList.size();
     }
     public void scanAllBooks() {

@@ -10,6 +10,7 @@ public class BookComic extends Book{
         this.setBookName(bookName);
         this.setAuthorName(authorName);
         this.setPageNum(pageNum);
+        this.setPlotIntroduction("无");
     }
 
     public String getPlotIntroduction() {

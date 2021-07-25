@@ -7,7 +7,7 @@ import maihao.librarysystem.library.Library;
 public class User {
 
     private  int privilegeLevel;
-    private BookShelfUser backPack = new BookShelfUser();
+    public BookShelfUser backPack = new BookShelfUser();
 
     public User(){
         this.privilegeLevel = 1;
@@ -34,10 +34,17 @@ public class User {
     }
 
     public void returnBookToLibrary(int tag) {
-        Book book = backPack.getBookByTag(tag - 1);
+        Book book = backPack.getBookByTag(tag);
         backPack.removeBook(book);
-//        System.out.println(backPack.getTotalNum());
+        book.setQuality(book.getQuality() + 2);//每次还书都会变旧一点
         Library.baseBookShelfLibrary.addBook(book);
+    }
+
+    public void returnAllBookToLibrary() {
+        int n = backPack.getTotalNum();
+        for (int i = 0; i<n; i++) {
+            returnBookToLibrary(i);
+        }
     }
 
 }

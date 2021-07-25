@@ -1,5 +1,6 @@
 package maihao.librarysystem.usersSystem;
 
+import maihao.librarysystem.Config;
 import maihao.librarysystem.book.Book;
 import maihao.librarysystem.book.BookComic;
 import maihao.librarysystem.library.Library;
@@ -62,13 +63,12 @@ public class Administrator {
 
     public void createBookToBase(String type) {
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("输入书籍名:");
-        String bookName = scanner.next();
+        String bookName = Config.scanner.next();
         System.out.println("输入作者名:");
-        String authorName = scanner.next();
+        String authorName = Config.scanner.next();
         System.out.println("输入书籍页数:");
-        int pageNum = scanner.nextInt();
+        int pageNum = Config.scanner.nextInt();
 
         if (type.equals("comic")) {
             createComic(bookName, authorName, pageNum);
