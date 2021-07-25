@@ -1,6 +1,6 @@
 package maihao.librarysystem.book;
 
-public class BookProgramming extends Book{
+public class BookProgramming extends Book {
 
     private String languageType;
     private String linkToBlog;

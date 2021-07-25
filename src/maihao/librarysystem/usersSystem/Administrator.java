@@ -86,10 +86,6 @@ public class Administrator {
         }
     }
 
-    public static void deleteFromBase() {
-
-    }
-
     public static void setUserPrivilege(String userName, int privilege) {
         Set<Registration> keySet = RegistryHandler.userHashMap.keySet();
 

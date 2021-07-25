@@ -1,6 +1,6 @@
 package maihao.librarysystem.book;
 
-public class BookComic extends Book{
+public class BookComic extends Book {
 
     private String plotIntroduction;
 

@@ -16,7 +16,6 @@ public class Config {
     public static final String LOGIN_SUCCESSFULLY = "登录成功！";
     public static final String LOGIN_FAILED = "登录失败，请重试";
     public static final String USER_CHOICE = "---输入“1”还书---输入“2”借书---输入“3”查询书籍信息";
-    public static final String SEARCH = "---输入“1”查询所有---输入“2”分类查询---";
     public static final String SEARCH_BY_TYPE = "---输入”1“进行分类查询---输入“2”跳过分类查询---";
     public static final String RETURN_BOOK_TAG = "---输入需要还书的编号即可还书，如“1”---";
     public static final String SEARCH_BY_STRING_TYPE = "输入需要查询的类型:";

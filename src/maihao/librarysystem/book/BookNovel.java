@@ -1,6 +1,6 @@
 package maihao.librarysystem.book;
 
-public class BookNovel extends Book{
+public class BookNovel extends Book {
 
     private String maleProtagonist;
     private String femaleProtagonist;
